@@ -1,0 +1,41 @@
+header {
+  height: 60px;
+  margin: $margin;
+  display: flex;
+}
+
+header .left {
+  height: 100%;
+  flex-basis: 50%;
+  @include flex(flex-start, center);
+  img {
+    height: 45px;
+    position: relative;
+    top: 2px;
+    cursor: pointer;
+  }
+  h2 a {
+    margin-left: 10px;
+    color: $colorText1;
+    font-size: .9em;
+    font-weight: 400;
+  }
+}
+
+header .right {
+  height: 100%;
+  flex-basis: 50%;
+  @include flex(flex-end, center);
+  .fa-th {
+    font-size: 1.3em;
+    color: $colorText1;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    &:hover {
+      background: #f0f0f0;
+    }
+  }
+
+}

@@ -1,0 +1,32 @@
+main .top {
+  padding: $margin;
+  height: 40px;
+  border-bottom: 1px solid #cbcbcb;
+  ul {
+    height: 100%;
+    @include flex(flex-start, center);
+    li {
+      margin-right: 30px;
+      font-weight: 500;
+      font-size: 1em;
+      a{
+        display: inline-block;
+        line-height: 40px;
+        color: $colorText1;
+        &.active {
+          color: $colorText2;
+          position: relative;
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 3px;
+            width: 100%;
+            background-color: $colorText2;
+          }
+        }
+      }
+    }
+  }
+}

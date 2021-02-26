@@ -1,0 +1,112 @@
+a.btn {
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-size: 0.95em;
+  font-weight: 500;
+}
+a.btn.full-blue {
+  background-color: #1a73e8;
+}
+a.btn.full-blue:hover {
+  opacity: 0.9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  height: 60px;
+  margin: 0 20px;
+  display: flex;
+}
+
+header .left {
+  height: 100%;
+  flex-basis: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header .left img {
+  height: 45px;
+  position: relative;
+  top: 2px;
+  cursor: pointer;
+}
+header .left h2 a {
+  margin-left: 10px;
+  color: #5f6368;
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+header .right {
+  height: 100%;
+  flex-basis: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header .right .fa-th {
+  font-size: 1.3em;
+  color: #5f6368;
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+header .right .fa-th:hover {
+  background: #f0f0f0;
+}
+
+main .top {
+  padding: 0 20px;
+  height: 40px;
+  border-bottom: 1px solid #cbcbcb;
+}
+main .top ul {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .top ul li {
+  margin-right: 30px;
+  font-weight: 500;
+  font-size: 1em;
+}
+main .top ul li a {
+  display: inline-block;
+  line-height: 40px;
+  color: #5f6368;
+}
+main .top ul li a.active {
+  color: #3367d6;
+  position: relative;
+}
+main .top ul li a.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #3367d6;
+}

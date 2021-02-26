@@ -1,0 +1,12 @@
+a.btn {
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-size: .95em;
+  font-weight: 500;
+  &.full-blue {
+    background-color: $colorButton1;
+    &:hover {
+      opacity: .9;
+    }
+  }
+}

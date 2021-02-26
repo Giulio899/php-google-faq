@@ -121,6 +121,27 @@
 
   </main>
 
+  <footer>
+    <div class="left">
+      <span>Google</span><i class="fas fa-circle"></i>
+      <span>Tutto su Google</span><i class="fas fa-circle"></i>
+      <span>Privacy</span><i class="fas fa-circle"></i>
+      <span>Termini</span>
+    </div>
+
+    <div class="right">
+      <img src="img/language.png" alt="Language">
+      <select>
+        <option value="italiano">Italiano</option>
+        <option value="english">English</option>
+        <option value="deutsch">Deutsch</option>
+        <option value="français">Français </option>
+        <option value="español">Español</option>
+
+      </select>
+    </div>
+  </footer>
+
 
 </body>
 </html>

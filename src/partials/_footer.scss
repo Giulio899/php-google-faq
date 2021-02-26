@@ -1,0 +1,26 @@
+footer {
+  padding: 10px 230px;
+  background-color: #f5f5f5;
+  color: $colorText1;
+  font-size: .75em;
+  @include flex(flex-start, center);
+  .left {
+    flex-basis: 50%;
+    @include flex(flex-start, center);
+    span {
+      cursor: pointer;
+    }
+    .fa-circle {
+      font-size: .15em;
+      margin: 0 5px;
+    }
+  }
+  .right {
+    flex-basis: 50%;
+    @include flex(flex-end, center);
+    select {
+      margin-left: 5px;
+      width: 150px;
+    }
+  }
+}

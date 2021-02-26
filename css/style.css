@@ -162,3 +162,36 @@ ol ol li {
 ol + p {
   margin-top: 30px;
 }
+
+footer {
+  padding: 10px 230px;
+  background-color: #f5f5f5;
+  color: #5f6368;
+  font-size: 0.75em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+footer .left {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+footer .left span {
+  cursor: pointer;
+}
+footer .left .fa-circle {
+  font-size: 0.15em;
+  margin: 0 5px;
+}
+footer .right {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+footer .right select {
+  margin-left: 5px;
+  width: 150px;
+}

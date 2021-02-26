@@ -110,10 +110,10 @@
 
         <div class="qa-container">
 
-        <h2><?php echo $item['q']; ?></h2>
-        <div class="answer"><?php echo $item['a']; ?></div>
+          <h2><?php echo $item['q']; ?></h2>
+          <div class="answer"><?php echo $item['a']; ?></div>
 
-      </div>
+        </div>
       <?php } ?>
 
 

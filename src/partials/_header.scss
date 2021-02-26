@@ -2,6 +2,10 @@ header {
   height: 60px;
   margin: $margin;
   display: flex;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 10;
 }
 
 header .left {
@@ -25,6 +29,7 @@ header .left {
 header .right {
   height: 100%;
   flex-basis: 50%;
+  padding-right: 35px;
   @include flex(flex-end, center);
   .fa-th {
     font-size: 1.3em;

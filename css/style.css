@@ -35,6 +35,10 @@ header {
   height: 60px;
   margin: 0 20px;
   display: flex;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 10;
 }
 
 header .left {
@@ -60,6 +64,7 @@ header .left h2 a {
 header .right {
   height: 100%;
   flex-basis: 50%;
+  padding-right: 35px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -77,9 +82,13 @@ header .right .fa-th:hover {
 }
 
 main .top {
-  padding: 0 20px;
+  padding: 80px 20px 20px 20px;
   height: 40px;
   border-bottom: 1px solid #cbcbcb;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  background-color: white;
 }
 main .top ul {
   height: 100%;
@@ -109,4 +118,47 @@ main .top ul li a.active::after {
   height: 3px;
   width: 100%;
   background-color: #3367d6;
+}
+
+main .bottom {
+  padding: 180px 230px 0 230px;
+  color: #3c4043;
+}
+main .bottom .qa-container {
+  margin-bottom: 60px;
+}
+main .bottom .qa-container h2 {
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+main .bottom .qa-container .answer p {
+  margin-bottom: 30px;
+  font-size: 0.9em;
+  line-height: 1.6;
+}
+main .bottom .qa-container .answer p a {
+  color: #3367d6;
+}
+main .bottom .qa-container h3 {
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+ol {
+  margin-left: 15px;
+  list-style-position: outside;
+  font-size: 0.9em;
+}
+ol ol {
+  margin: 20px 0;
+  margin-left: 15px;
+  list-style-type: lower-latin;
+  font-size: 1em;
+}
+ol ol li {
+  margin-bottom: 10px;
+}
+ol + p {
+  margin-top: 30px;
 }

@@ -1,7 +1,11 @@
 main .top {
-  padding: $margin;
+  padding: 80px 20px 20px 20px;
   height: 40px;
   border-bottom: 1px solid #cbcbcb;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  background-color: white;
   ul {
     height: 100%;
     @include flex(flex-start, center);
@@ -28,5 +32,48 @@ main .top {
         }
       }
     }
+  }
+}
+
+main .bottom {
+  padding: 180px 230px 0 230px;
+  color: $colorText3;
+  .qa-container {
+    margin-bottom: 60px;
+    h2 {
+      margin-bottom: 30px;
+      font-weight: 500;
+    }
+    .answer p {
+      margin-bottom: 30px;
+      font-size: .9em;
+      line-height: 1.6;
+      a {
+        color: $colorText2;
+      }
+    }
+    h3 {
+      font-size: 1.1em;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+ol {
+  margin-left: 15px;
+  list-style-position: outside;
+  font-size: .9em;
+  ol {
+    margin: 20px 0;
+    margin-left: 15px;
+    list-style-type: lower-latin;
+    font-size: 1em;
+    li {
+      margin-bottom: 10px;
+    }
+  }
+  &+p {
+    margin-top: 30px;
   }
 }
